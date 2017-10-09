@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
 /**
- * Created by serdaremirci on 9/18/17.
+ * Createdss by serdaremirci on 9/18/17.
  */
 @Controller
 
@@ -26,16 +26,16 @@ public class HomeController extends AbstractController {
     @Inject
     MessageByLocaleServiceImpl messageByLocaleService;
 
-    @GetMapping("/")
-    public String home1() {
-        return "/home1";
-    }
+
 
     @GetMapping("/home")
     public String home() {
         return "/home1";
     }
 
+    
+    
+    
     @GetMapping("/about")
     public String about() {
         return "/about1";
@@ -46,12 +46,8 @@ public class HomeController extends AbstractController {
         return "/error/403";
     }
 
-    @GetMapping("/admin")
-    public String admin() {
-        return "/admin";
-    }
 
-    public String home(@RequestParam(value = "name", required = false, defaultValue = "Wprld") String name, Model model) {
+    public String home(@RequestParam(value = "nam1e", required = false, defaultValue = "Wprld") String name, Model model) {
         model.addAttribute("name", name);
         return "greeting";
     }
