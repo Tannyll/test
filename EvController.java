@@ -28,17 +28,17 @@ public class HomeController extends AbstractController {
 
     @GetMapping("/")
     public String home1() {
-        return "/home";
+        return "/home1";
     }
 
     @GetMapping("/home")
     public String home() {
-        return "/home";
+        return "/home1";
     }
 
     @GetMapping("/about")
     public String about() {
-        return "/about";
+        return "/about1";
     }
 
     @GetMapping("/403")
