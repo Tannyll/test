@@ -1,2 +1,4 @@
 Config.java
 Databse.java
+Config/*
+!Config/Test.java
